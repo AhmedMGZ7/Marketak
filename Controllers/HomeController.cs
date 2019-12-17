@@ -12,6 +12,14 @@ namespace Marketak.Controllers
     {
 
         string UserName = "Messi";
+
+        public ActionResult Marketak()
+        {
+            ViewData["Admin"] = UserName;
+            return View();
+        }
+
+
         public ActionResult HomePage()
         {
             ViewData["Admin"] = UserName; 

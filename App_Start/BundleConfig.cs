@@ -31,6 +31,8 @@ namespace Marketak
             //Home page
             bundles.Add(new StyleBundle("~/Content/Login").Include(("~/Content/Login.css")));
 
+            bundles.Add(new StyleBundle("~/Content/Marketak").Include(("~/Content/Marketak.css")));
+
             bundles.Add(new ScriptBundle("~/bundles/Login").Include(
                       "~/Scripts/Login.js"));
         }

@@ -147,6 +147,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\HomePage.css" />
     <Content Include="Content\Login.css" />
+    <Content Include="Content\Marketak.css" />
     <Content Include="Scripts\Login.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -296,6 +297,7 @@
     <Content Include="Views\Home\AddEmployee.cshtml" />
     <Content Include="Views\Home\EditEmployee.cshtml" />
     <Content Include="Views\Home\DeleteEmployee.cshtml" />
+    <Content Include="Views\Home\Marketak.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,8 +1,10 @@
 ﻿body {
     font-family: "Lato", sans-serif;
-    background-color:#FFF
+  
 }
-
+.form-group {
+    color: #ff0000;
+}
 
 
 .main-head {
@@ -41,10 +43,11 @@
 @media screen and (min-width: 768px) {
     .main {
         margin-left: 40%;
+       
     }
 
     .sidenav {
-        width: 40%;
+        width: 20%;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -64,16 +67,20 @@
 .login-main-text {
     margin-top: 20%;
     padding: 60px;
-    color: #fff;
+    color: #ff0000;
 }
 
     .login-main-text h2 {
         font-weight: 300;
+
     }
+    
 
 .btn-black {
     background-color: #000 !important;
     color: #fff;
+    outline-style:solid;
+    shape-rendering:crispEdges;
 }
 
 footer {

@@ -24,6 +24,7 @@
                     @{
                         if (ViewData["Admin"].Equals("Messi"))
                         {
+                            <li>@Html.ActionLink("Home", "HomePage", "Home")</li>
                             <li>@Html.ActionLink("Sign Up", "SignUP", "Home")</li>
                             <li>@Html.ActionLink("Login", "Login", "Home")</li>
                             <li>@Html.ActionLink("Products", "Products", "Home")</li>
@@ -35,6 +36,7 @@
                         }
                         else
                         {
+                            <li>@Html.ActionLink("Home", "HomePage", "Home")</li>
                             <li>@Html.ActionLink("Sign Up", "SignUP", "Home")</li>
                             <li>@Html.ActionLink("Login", "Login", "Home")</li>
                             <li>@Html.ActionLink("Products", "Products", "Home")</li>
