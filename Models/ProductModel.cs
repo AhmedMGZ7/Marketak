@@ -8,7 +8,7 @@ namespace Marketak.Models
 {
     public class ProductModel
     {
-        [Display(Name ="")]
+        
         public int ID { get; set; }
         public string Name { get; set; }
         public string CategoryName { get; set; }

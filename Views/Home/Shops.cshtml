@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Marketak.Models.Shops>
+
+@{
+    ViewBag.Title = "Shops";
+}
+
+<h2>Shops</h2>
+
+<p>
+    @Html.ActionLink("Add New Shop", "CreateShops")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MangerID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MangerID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditShops", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "DeleteShops", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -20,20 +20,34 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Sign Up", "SignUP", "Home")</li>
-                    <li>@Html.ActionLink("Login", "Login", "Home")</li>
-                    <li>@Html.ActionLink("Products", "Products", "Home")</li>
-                    <li>@Html.ActionLink("MyCart", "MyCart", "Home")</li>
+
+                    @{
+                        if (ViewData["Admin"].Equals("Messi"))
+                        {
+                            <li>@Html.ActionLink("Sign Up", "SignUP", "Home")</li>
+                            <li>@Html.ActionLink("Login", "Login", "Home")</li>
+                            <li>@Html.ActionLink("Products", "Products", "Home")</li>
+                            <li>@Html.ActionLink("Shops", "Shops", "Home")</li>
+                            <li>@Html.ActionLink("Companies", "Companies")</li>
+                            <li>@Html.ActionLink("Employees", "Employee")</li>
+
+
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Sign Up", "SignUP", "Home")</li>
+                            <li>@Html.ActionLink("Login", "Login", "Home")</li>
+                            <li>@Html.ActionLink("Products", "Products", "Home")</li>
+                            <li>@Html.ActionLink("MyCart", "MyCart", "Home")</li>
+                        }
+                    }
                 </ul>
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Marketak</p>
-        </footer>
+       
     </div>
 
     @Scripts.Render("~/bundles/jquery")

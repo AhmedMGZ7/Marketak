@@ -4,101 +4,48 @@
     ViewBag.Title = "ProductsDetails";
 }
 
-<h2>ProductsDetails</h2>
+    <h1 class="col-md-offset-6"> @Html.DisplayFor(model => model.Name) </h1>
 
 <div>
-    <h4>ProductModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+            <img src=@Html.DisplayFor(model => model.Photo) class="img-responsive">
+            <div class="caption">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6 price">
+                        <h4>
+                            <label>Price: @Html.DisplayFor(model => model.Price)</label>
+                        </h4>
+                    </div>
+                </div>
+                <p>Description: @Html.DisplayFor(model => model.Description)</p>
+                <div class="row">
+                    <div class="col-md-offset-6">
+                        <button class="btn btn-success btn-product">Add to Cart</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="col-md-10">
+                    <h4>
+                        <label>Quantity: @Html.DisplayFor(model => model.Quantity)</label>
+                    </h4>
+                    <h4>
+                        <label>Rating: @Html.DisplayFor(model => model.Rating)</label>
+                    </h4>
+                    <h4>
+                        <label>Number of Ratings: @Html.DisplayFor(model => model.NoOfrating)</label>
+                    </h4>
+                    <h4>
+                        <label>Company: @Html.DisplayFor(model => model.CompanyName)</label>
+                    </h4>
+                    <h4>
+                        <label>Category: @Html.DisplayFor(model => model.CategoryName)</label>
+                    </h4>
+                    <h4>
+                        <label>Color: @Html.DisplayFor(model => model.Color)</label>
+                    </h4>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CategoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CompanyName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CompanyName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SalePercentage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SalePercentage)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NoOfrating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NoOfrating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-    </dl>
+                </div>
+            </div>
+            
 </div>
 
 
