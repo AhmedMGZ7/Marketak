@@ -148,6 +148,7 @@
     <Content Include="Content\HomePage.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Marketak.css" />
+    <Content Include="Scripts\HomePage.js" />
     <Content Include="Scripts\Login.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />

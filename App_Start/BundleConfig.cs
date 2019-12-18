@@ -35,6 +35,8 @@ namespace Marketak
 
             bundles.Add(new ScriptBundle("~/bundles/Login").Include(
                       "~/Scripts/Login.js"));
+            bundles.Add(new ScriptBundle("~/bundles/HomePage").Include(
+                      "~/Scripts/HomePage.js"));
         }
     }
 }
