@@ -6,9 +6,7 @@
 
 <h2>Shops</h2>
 
-<p>
-    @Html.ActionLink("Add New Shop", "CreateShops")
-</p>
+<button type="submit" class="btn btn-black" onclick='location.href="https://localhost:44383/Home/CreateShops"' >Add Shop</button>
 <table class="table">
     <tr>
         <th>
@@ -35,7 +33,7 @@
             @Html.DisplayFor(modelItem => item.MangerID)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditShops", new { id=item.ID }) |
+            @Html.ActionLink("Edit", "EditShops", new { id=item.ID }) 
             @Html.ActionLink("Delete", "DeleteShops", new { id=item.ID })
         </td>
     </tr>

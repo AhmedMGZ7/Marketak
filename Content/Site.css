@@ -1,31 +1,8 @@
 ﻿
 body {
-  margin: 20px;
-  padding: 0;
-  background-color:#EAEAEA;
-  height: 100vh;
-}
-
-#login .container #login-row #login-column #login-box {
-  margin: 250px;
-  margin-top:80px;
-  max-width: 600px;
-  height: 500px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
-
-}
-#login .container #login-row #login-column #login-box #login-form {
-  padding: 20px;
-  margin-top: 30px;
-}
-#login .container #login-row #login-column #login-box #login-form #register-link {
-  margin-top: -85px;
-}
-
-body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#ffffff;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -46,5 +23,8 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+.btn-black {
+background-color:#00ff21;
 }
 

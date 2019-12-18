@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Marketak.Models.Delivery>
+
+@{
+    ViewBag.Title = "Delivery";
+}
+
+<h2>AddDelivery</h2>
+
+<p>
+    @Html.ActionLink("Add New Delivery", "AddDelivery")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.city)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Companyname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.city)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Companyname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditDelivery", new { City = item.city,Company = item.Companyname }) |          
+            @Html.ActionLink("Delete", "DeleteDelivery", new { City = item.city,Company = item.Companyname })
+        </td>
+    </tr>
+}
+
+</table>
