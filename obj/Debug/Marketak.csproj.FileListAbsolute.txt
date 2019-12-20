@@ -78,3 +78,5 @@ C:\Users\Ahmed Magdy\Desktop\Marketak\Marketak\obj\Debug\Marketak.dll
 C:\Users\Ahmed Magdy\Desktop\Marketak\Marketak\obj\Debug\Marketak.pdb
 C:\Users\Ahmed Magdy\Desktop\Marketak\Marketak\bin\DataLibrary.dll
 C:\Users\Ahmed Magdy\Desktop\Marketak\Marketak\bin\DataLibrary.pdb
+E:\coullage\Year 2\First Semester\DB\Marketak\obj\Debug\Marketak.dll
+E:\coullage\Year 2\First Semester\DB\Marketak\obj\Debug\Marketak.pdb
