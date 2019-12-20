@@ -2,32 +2,37 @@
 @{
     ViewBag.Title = "Login";
 }
-
-<div class="sidenav">
-    <div class="login-main-text">
-        <h2>Marketak<br> Login Page</h2>
-        <p>Login or register from here to access.</p>
-    </div>
-</div>
-<div class="main">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4iSmDxHiVmxg4aUpUv7K8krAZ8SzkCWLv_BQ_Pjzc5lTYQm6Z&s" />
-    <div class="col-md-6 col-sm-12">
-        <div class="login-form">
-            <form>
-                <div class="form-group">
-                    <label>User Name</label>
-                    <input type="text" class="form-control" placeholder="User Name">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-black">@Html.ActionLink("Login", "HomePage", "Home")</button>
-                <button type="submit" class="btn btn-black">@Html.ActionLink("Register", "SignUp", "Home")</button>
-           
-            </form>
+    <body>
+        <div class="sidenav">
+            <div class="login-main-text">
+                <h2>Marketak<br> Login Page</h2>
+                <p>Login or register from here to access.</p>
+            </div>
         </div>
-    </div>
+        <div class="main">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4iSmDxHiVmxg4aUpUv7K8krAZ8SzkCWLv_BQ_Pjzc5lTYQm6Z&s" />
+            <div class="col-md-6 col-sm-12">
+                <div class="login-form">
+                    <form>
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" class="form-control" placeholder="User Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
 
-</div>
+
+
+                    </form>
+                </div>
+                <button type="submit" class="btn btn-black" onclick='location.href="https://localhost:44383/Home/HomePage"'>Login</button>
+                <button type="submit" class="btn btn-black" onclick='location.href="https://localhost:44383/Home/HomePage"'>Register</button>
+            </div>
+            
+        </div>
+       
+        
+    </body>
 @Styles.Render("~/Content/Login")

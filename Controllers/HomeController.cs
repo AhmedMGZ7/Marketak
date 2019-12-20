@@ -157,11 +157,40 @@ namespace Marketak.Controllers
             return View(employee);
         }
 
-
+        public ActionResult Delivery()
+        {
+            List<Delivery> Del = new List<Delivery>();
+            Del.Add(new Delivery { city = "Maadi", Companyname = "Otlob", Price=100,Time=12 });
+            ViewData["Admin"] = UserName;
+            return View(Del);
+        }
         public ActionResult AddDelivery()
         {
+           
             ViewData["Admin"] = UserName;
             return View();
+        }
+
+        public ActionResult EditDelivery(string City, string Company)
+        {
+            Delivery Del = new Delivery { city = City, Companyname = Company, Price = 100, Time = 12 };
+            ViewData["Admin"] = UserName;
+            return View(Del);
+        }
+
+        public ActionResult DeleteDelivery(string City, string Company)
+        {
+            Delivery Del = new Delivery { city = City, Companyname = Company, Price = 100, Time = 12 };
+            ViewData["Admin"] = UserName;
+            return View(Del);
+        }
+
+        public ActionResult Ads()
+        {
+            List<Ads> Ads = new List<Ads>();
+            Ads.Add(new Ads { Name="Omg",CompanyName="KFC",SDate="15/11/1998", EDate = "15/11/1998" ,paidPerMonth=200,Photo= "https://i.pinimg.com/originals/8f/72/78/8f7278cc6d6c629dca76b8458b24f1fc.jpg" });
+            ViewData["Admin"] = UserName;
+            return View(Ads);
         }
 
         public ActionResult AddAds()
@@ -170,7 +199,20 @@ namespace Marketak.Controllers
             return View();
         }
 
+        public ActionResult EditAds(string Name)
+        {
 
+            Ads Ads = new Ads { Name = Name, CompanyName = "KFC", SDate = "15/11/1998", EDate = "15/11/1998", paidPerMonth = 200, Photo = "https://i.pinimg.com/originals/8f/72/78/8f7278cc6d6c629dca76b8458b24f1fc.jpg" };
+            ViewData["Admin"] = UserName;
+            return View(Ads);
+        }
+
+        public ActionResult DeleteAds(string Name)
+        {
+            Ads Ads = new Ads { Name = Name, CompanyName = "KFC", SDate = "15/11/1998", EDate = "15/11/1998", paidPerMonth = 200, Photo = "https://i.pinimg.com/originals/8f/72/78/8f7278cc6d6c629dca76b8458b24f1fc.jpg" };
+            ViewData["Admin"] = UserName;
+            return View(Ads);
+        }
         public ActionResult Addinstallment()
         {
             ViewData["Admin"] = UserName;
